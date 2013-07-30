@@ -61,6 +61,9 @@ After editing, your file should contain :
 
     	php artisan migrate
 
+## PHP not found
+You'll have to add the directory in which the php executable is located to your "path" variable (I guess in your case that would be C:\xampp\php ). In Windows, you can do that as described [here](http://www.computerhope.com/issues/ch000549.htm)
+Any directory you place in this path variable (they're separated by a semicolon) will be automatically used in, for example, a cmd shell.
 
 ##That's it
 You can try to reach your local website now : [http://www.vieassoc.lo](http://www.vieassoc.lo)
