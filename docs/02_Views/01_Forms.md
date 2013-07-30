@@ -1,21 +1,25 @@
 **VieAssociative** provide some syntax sugar for creating forms with fiew lines
+We created these methods for using in a fast and maintenable way the Laravel Form component in a Bootstrap HTML structure.
 
-## Input
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-
+First, you implement an array :
 <pre>
+// Somewhere in a view of Laravel
 @input = array(
-        'id'=>'',
+        //Here goes all the configuration for the Laravel Form
 		'form' => array(
-            'placeholder'=>'',
-            'class' => '',
-    		'data-original-title'=>'',
-		)
+            //Here goes all the configuration for the Bootstrap structure
+		),
+        'elements' => array(
+            //Here goes all the configuration for radio and checkbox
+        )
     )
 @
+// And by one of these lines you create the input and the bootstrap structure
 {{ SiteHelpers::create_input($input) }}
+{{ SiteHelpers::create_radio($input) }}
+{{ SiteHelpers::create_checkbox($input) }}
 </pre>
+Remember : the '{{' and '}}' is a Blade, the Laravel component for Templating, possibility. It just calls the echo function of PHP of what is between these brackets
 
 ## Checkbox
 
@@ -28,7 +32,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
         'data-toggle'=> '',
         'form' => array(
             '1'=>array(
-                'value'=>'true',
+                'value'=>'',
                 'text'=>'',
             ),
         )
@@ -50,11 +54,11 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula 
     'data-toggle'=> '',
     'form' => array(
         '1'=>array(
-            'value'=>'true',
+            'value'=>'',
             'text'=>'',
         ),
         '2'=>array(
-            'value'=>'false',
+            'value'=>'',
             'text'=>'',
             'checked'=>true,
         ),

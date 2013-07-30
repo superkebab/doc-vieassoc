@@ -16,11 +16,11 @@ Hold the SHIFT key while you right-click the Windows window. You should see "Ope
 
 1. On this command window, type : 
 
-        composer install
+    	composer install
 
 2. Then 
 
-        composer update
+    	composer update
 
 Repeat the last command meny times until nothing is affected. Keep this cmd window open, you will need it again.
 
@@ -55,11 +55,11 @@ After editing, your file should contain :
 
 1. On the command window, type : 
 
-        php artisan migrate:install
+    	php artisan migrate:install
 
 2. Then 
 
-        php artisan migrate
+    	php artisan migrate
 
 
 ##That's it
