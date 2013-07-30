@@ -1,24 +1,26 @@
-**VieAssociative** provide some syntax sugar for creating forms with fiew lines
+**VieAssociative** provide some syntax sugar for creating forms.
 We created these methods for using in a fast and maintenable way the Laravel Form component in a Bootstrap HTML structure.
 
 First, you implement an array :
-<pre>
-// Somewhere in a view of Laravel
-@input = array(
-        //Here goes all the configuration for the Laravel Form
-		'form' => array(
-            //Here goes all the configuration for the Bootstrap structure
-		),
-        'elements' => array(
-            //Here goes all the configuration for radio and checkbox
+
+    // Somewhere in a view of Laravel
+    @input = array(
+            //Here goes all the configuration for the Laravel Form
+    		'form' => array(
+                //Here goes all the configuration for the Bootstrap structure
+    		),
+            'elements' => array(
+                //Here goes all the configuration for radio and checkbox
+            )
         )
-    )
-@
-// And by one of these lines you create the input and the bootstrap structure
-{{ SiteHelpers::create_input($input) }}
-{{ SiteHelpers::create_radio($input) }}
-{{ SiteHelpers::create_checkbox($input) }}
-</pre>
+    @
+
+And you call just after the corresponding method
+
+    // And by one of these lines you create the input and the bootstrap structure
+    {{ SiteHelpers::create_input($input) }}
+    {{ SiteHelpers::create_radio($input) }}
+    {{ SiteHelpers::create_checkbox($input) }}
 Remember : the '{{' and '}}' is a Blade, the Laravel component for Templating, possibility. It just calls the echo function of PHP of what is between these brackets
 
 ## Checkbox

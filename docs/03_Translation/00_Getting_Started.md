@@ -1,3 +1,25 @@
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+We try our best to correctly place the language files for each page.
+For the page 
 
-Lang::get('association/form_create.tooltip_link')
+	http://association.vieassoc.lo/1/edit/general-informations#
+
+You will found language keys-values on
+	
+	\app\lang\fr\association\edit\general-informations.php
+ 
+Please follow these simples rules - it will help for maintenance and the future translation of the website.
+
+
+## For developers 
+You just need to call this method :
+	
+	Lang::get()
+
+And in a blade view, you will write 
+
+	{{Lang::get()}}
+
+For exemple, you can access to /folder1/folder2/folder3/file for the key KEY by using
+
+	{{Lang::get('folder1/folder2/folder3/file.KEY')}}
+
