@@ -2,7 +2,7 @@ You will need to download first these softwares :
 
 * Web server like [XAMPP](http://www.apachefriends.org/fr/xampp-windows.html) (102Mb)
 * Dependency Manager for PHP : [Composer](http://getcomposer.org) (600Kb)
-* The last version of VieAssociative : NOT PUBLIC YET (~8Mb)
+* The last version of VieAssociative : https://github.com/serut/vieassociative/archive/master.zip
 * A light and fast IDE like this one : [Sublime Text 2](http://www.sublimetext.com/2) (5Mb)
 
 

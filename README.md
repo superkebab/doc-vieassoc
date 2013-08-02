@@ -2,8 +2,7 @@
 
 ## Link
 
-You can access to Vie Associative website there : 
-
-
-* [doc.vieassociative.fr](http://doc.vieassociative.fr) for get online doc
-* [www.vieassociative.fr](http://www.vieassociative.fr) for access to the website
+* [Get online doc](http://doc.vieassociative.fr)
+* [Access the website](http://www.vieassociative.fr)
+* [Github vieassociative doc](https://github.com/serut/doc-vieassoc)
+* [Github vieassociative](https://github.com/serut/vieassociative)
