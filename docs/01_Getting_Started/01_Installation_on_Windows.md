@@ -17,7 +17,7 @@ Uncompress the VieAssociative code on there.
 ## Database installation
 
 Create a database with PhpMyAdmin.
-Update the file web_server_root/your_vieassoc_folder/**app/config/local/database.php** with your's credentials.
+Update with your's credentials ( database password and database name ) the file web_server_root/your_vieassoc_folder/**app/config/local/database.php**.
 
 ## Host file configuration
 It allows you to reach the website with an other URL than localhost. You can use whathever you want, but I personnally use **.vieassoc.lo**
@@ -46,11 +46,11 @@ Hold the SHIFT key while you right-click the Windows window. You should see "Ope
 
 1. On the command window, type : 
 
-    	php artisan migrate:install
+    	php artisan migrate:install --env=local
 
 2. Then 
 
-    	php artisan migrate
+    	php artisan migrate --env=local
 
 If you have an error when using one of these commands, please read to the next section.
 ## PHP not found ?
