@@ -1,27 +1,25 @@
 You will need to download first these softwares :
-
+* A github account
 * Web server like [XAMPP](http://www.apachefriends.org/fr/xampp-windows.html) (102Mb)
 * Dependency Manager for PHP : [Composer](http://getcomposer.org) (600Kb)
-* The last version of VieAssociative : https://github.com/serut/vieassociative/archive/master.zip
+* The last version of VieAssociative : https://github.com/serut/vieassociative
 * A light and fast IDE like this one : [Sublime Text 2](http://www.sublimetext.com/2) (5Mb)
 
 
 ## File installation
-Create a folder on your web server directory.
-Uncompress the VieAssociative code on there.  
-
-	Exemple : web_server_root/your_vieassoc_folder/app for the app folder.
-
-
+Install the github windows software.
+Then, click on tools > options and change the default storage directory by your webserver root
+Fork the Vie Associative repository and clone the code on your computer.
 
 ## Database installation
 
 Create a database with PhpMyAdmin.
-Update with your's credentials ( database password and database name ) the file web_server_root/your_vieassoc_folder/**app/config/local/database.php**.
+Open the file web_server_root/your_vieassoc_folder/**app/config/local/database.php** and update the database password and the database name with your's local credentials
 
 ## Host file configuration
 It allows you to reach the website with an other URL than localhost. You can use whathever you want, but I personnally use **.vieassoc.lo**
-The file is located on YOUR_SYSTEM_LETTER:\Windows\System32\Drivers\etc and the file is **hosts** . You may need some tricks for editing it because it's a system file, so copy paste this file anywhere else, edit it, and replace it where you found it.
+The file is located on YOUR_SYSTEM_LETTER:\Windows\System32\Drivers\etc and the file is **hosts** . 
+On W8, you may need some tricks for editing it because it's a system file : copy paste this file anywhere else than the system's folder, edit it, and replace it where you found it.
 Add this to the hosts file:
 	
 	127.0.0.1 www.vieassoc.lo
@@ -45,10 +43,6 @@ After editing, your file should contain :
 Hold the SHIFT key while you right-click the Windows window. You should see "Open Command Window here"
 
 1. On the command window, type : 
-
-    	php artisan migrate:install --env=local
-
-2. Then 
 
     	php artisan migrate --env=local
 
